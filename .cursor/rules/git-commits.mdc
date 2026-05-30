@@ -1,6 +1,0 @@
----
-description: Git commit rules for this project
-alwaysApply: true
----
-
-Never add Co-authored-by, Made-with: Cursor, cursoragent@cursor.com, or any Cursor/agent attribution to commits or PR descriptions. Use plain commit messages only.
