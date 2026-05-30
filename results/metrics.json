@@ -1,0 +1,38 @@
+{
+  "dataset": {
+    "dataset_id": "AlicanKiraz0/Cybersecurity-Dataset-v1",
+    "full_rows": 2411,
+    "used_train_rows": 1926,
+    "used_val_rows": 483,
+    "split": "80/20 train_test_split",
+    "max_seq_len": 512,
+    "avg_answer_chars": 3021
+  },
+  "validation_samples_evaluated": 8,
+  "base_model": {
+    "model_id": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "mean_rouge_l": 0.1498,
+    "error_breakdown": {
+      "possible_hallucination": 1,
+      "semantic_mismatch": 7
+    }
+  },
+  "lora_model": {
+    "adapter": "/Users/nidhi.kamal/Documents/work/mitigata/cybersecurity-qa-lora/checkpoints/lora_adapter",
+    "mean_rouge_l": 0.16,
+    "error_breakdown": {
+      "semantic_mismatch": 8
+    }
+  },
+  "improvement_rouge_l": 0.0102,
+  "overfitting_analysis": "Train and validation loss are close \u2014 model may be underfitting or well-regularized.",
+  "failure_modes": {
+    "base": {
+      "possible_hallucination": 1,
+      "semantic_mismatch": 7
+    },
+    "lora": {
+      "semantic_mismatch": 8
+    }
+  }
+}

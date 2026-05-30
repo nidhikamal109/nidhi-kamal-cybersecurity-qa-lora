@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Model weights and caches (do not commit large files)
+checkpoints/
+outputs/
+*.pt
+*.bin
+*.safetensors
+.cache/
+wandb/
+
+# Data downloads
+data/
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
