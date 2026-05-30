@@ -3,7 +3,10 @@ __pycache__/
 *.py[cod]
 .venv/
 venv/
+# Secrets (never commit tokens)
 .env
+.env.*
+!.env.example
 
 # Model weights and caches (do not commit large files)
 checkpoints/
