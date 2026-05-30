@@ -7,7 +7,6 @@ venv/
 .env
 .env.*
 !.env.example
-
 # Model weights and caches (do not commit large files)
 checkpoints/
 outputs/
